@@ -1,0 +1,30 @@
+# Core framework
+Django==6.0.4
+
+# Database drivers (pick the one you actually use)
+psycopg2-binary>=2.9      # PostgreSQL
+mysqlclient>=2.2          # MySQL / MariaDB
+# sqlite3 is built‑in, no extra package needed
+
+# Testing utilities
+pytest>=8.2
+pytest-django>=4.8
+factory-boy>=3.3        # fixtures/factories
+coverage>=7.6           # test coverage reporting
+
+# Linting / static analysis (optional but recommended)
+flake8>=7.1
+black>=24.4
+isort>=5.13
+
+# Environment / configuration
+python-dotenv>=1.0       # .env handling
+django-environ>=0.11     # alternative env‑var helper
+
+# Security / hardening (optional)
+django-csp>=3.8
+django-axes>=6.5
+
+# API / serialization (if the project uses DRF)
+djangorestframework>=3.15
+drf-spectacular>=0.27   # OpenAPI schema generation
