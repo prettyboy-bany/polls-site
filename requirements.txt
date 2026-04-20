@@ -1,5 +1,5 @@
 # Core framework
-Django==6.0.4
+Django>=5.2, <6.0
 
 # Database drivers (pick the one you actually use)
 psycopg2-binary>=2.9      # PostgreSQL
