@@ -1,0 +1,7 @@
+li a {
+    color: green;
+}
+
+body {
+    background: lightblue url("images/polls-and-vote.png") no-repeat;
+}
