@@ -1,4 +1,17 @@
-<h1>{{ question.question_text }}</h1>
+{%load static%}
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Polls App - Results</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+    </head>
+
+<body>
+
+    <h1 id="header" style: text-color="blue";>Results for your polls vote</h1>
+
+<h2>{{ question.question_text }}</h2>
 
 <ul>
 {% for choice in question.choice_set.all %}
@@ -7,3 +20,14 @@
 </ul>
 
 <a href="{% url 'polls:detail' question.id %}">Vote again?</a>
+
+<div class="container col-lg-8">
+    <div class="options">
+
+<a href="{% url 'polls:index' %}">Return Home</a>
+</div>
+</div>
+
+</body>
+
+</html>

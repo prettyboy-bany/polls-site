@@ -7,12 +7,18 @@
     <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
 </head>
 <body>
+    <div class="container col-lg-8">
+        <h1 id="header">Let's vote?</h1>
+        <p id="sub-head"><strong>Welcome to the Polls App!</strong></p> <br />  
+        <p>Here you can find the latest polls and vote on your favorite topics:</p>
+    </div>
+
 {% if latest_question_list %}
-    <ul>
+    <ol>
     {% for question in latest_question_list %}
         <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
     {% endfor %}
-    </ul>
+    </ol>
 {% else %}
     <p>No polls are available.</p>
 {% endif %}

@@ -1,7 +1,40 @@
 li a {
-    color: green;
+    color: blueviolet;
 }
 
 body {
     background: rgb(21, 75, 94) url("images/background-2.jpg") no-repeat;
 }
+
+#header {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    text-align: center;
+    font-weight: bolder;
+    animation-delay: 2ms;
+}
+
+#sub-head {
+    font-family:  Arial, Helvetica, sans-serif;
+    color: blueviolet;
+    text-align: center;
+}
+
+.options {
+    color: red;
+    text-align: center;
+    font-style: italic;
+}
+
+#home-btn {
+    /* background-image: url('images/icon-close.png');*/
+    margin-left: 50%;
+    background-color: #eebe9a;
+}
+
+.container-btn{
+    position:inherit;
+    align-items: center;
+    justify-items: center;
+}
+

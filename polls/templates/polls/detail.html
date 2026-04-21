@@ -1,9 +1,19 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Polls App - Details</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+    </head> 
+
 <!--<h1>{{ question.question_text }}</h1>
 <ul>
 {% for choice in question.choice_set.all %}
     <li>{{ choice.choice_text }}</li>
 {% endfor %}
 </ul>-->
+<body>
 
 <form action="{% url 'polls:vote' question.id %}" method="post">
 {% csrf_token %}
@@ -17,3 +27,10 @@
 </fieldset>
 <input type="submit" value="Vote">
 </form>
+
+<div class="container-btn">
+<button id="home-btn"><a href="{% url 'polls:index' %}">Home</a></button>
+</div>
+
+</body>
+</html>
