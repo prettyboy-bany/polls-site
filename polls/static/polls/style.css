@@ -21,7 +21,6 @@ body {
 }
 
 .options {
-    color: red;
     text-align: center;
     font-style: italic;
 }
@@ -29,7 +28,7 @@ body {
 #home-btn {
     /* background-image: url('images/icon-close.png');*/
     margin-left: 50%;
-    background-color: #eebe9a;
+    background-color: whitesmoke;
 }
 
 .container-btn{
